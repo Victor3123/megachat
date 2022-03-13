@@ -1,18 +1,6 @@
 import mongoose from 'mongoose';
+import { Contact } from './contact.schema';
 const { Schema } = mongoose;
-
-const Contact = new Schema(
-  {
-    id: String,
-    name: String,
-    surname: String,
-    isBlocked: Boolean,
-  },
-  {
-    id: false,
-    _id: false,
-  }
-);
 
 export const User = new Schema(
   {
